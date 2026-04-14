@@ -21,3 +21,10 @@ const students = [
 
 // Recupera la classe dello studente 'Marco Lanci'
 // Risultato: '3C'
+
+const classeDiMarco = students.find((student, index) => {
+  return student.name === 'Marco Lanci'; // trova studente con nome marco lanci
+  
+});
+
+console.log(classeDiMarco.class); // ecco a voi....la classe di Marco!!
