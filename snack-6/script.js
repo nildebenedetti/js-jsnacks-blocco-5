@@ -12,3 +12,21 @@ const zucchine = [
 ];
 
 // A partire dall'array fornito, crea due array. Uno con le zucchine più lunghe di almeno 15cm. L'altro con le restanti.
+
+// ecco i miei array pronti per accogliere zucchine per tutti gli standard
+const zucchineEsose = [];
+const zucchineDiscrete = [];
+
+// ora andiamo a smistare le zucchine
+zucchine.find((ortaggio) => {
+  const { length } = zucchine;
+  if (ortaggio.length > 15) {
+    zucchineEsose.push(ortaggio)
+  } else if (ortaggio.length <= 15) {
+    zucchineDiscrete.push(ortaggio)
+  }
+});
+
+console.log(zucchineEsose);
+console.log(zucchineDiscrete);
+
